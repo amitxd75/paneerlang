@@ -86,11 +86,11 @@ jabtak counter < 3 {
 ### Arrays and Loops
 ```paneer
 ye numbers: array<int> = [1, 2, 3, 4, 5];
-ye names: array<string> = ["Amit", "Priya", "Raj"];
+ye names: array<string> = ["Amit", "Alex", "Steve"];
 
 // Array access
 ye first: int = numbers[0];        // Gets 1
-ye second: string = names[1];      // Gets "Priya"
+ye second: string = names[1];      // Gets "Alex"
 
 // Array iteration
 har num mein numbers {  // "har...mein" = for...in
