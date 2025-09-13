@@ -1,0 +1,70 @@
+// PaneerLang Calculator Example
+// Demonstrates functions, variables, and control flow
+
+paneer.bol("=== PaneerLang Calculator ===");
+
+// Function definitions
+func add(a int, b int) int {
+    return a + b;
+}
+
+func subtract(a int, b int) int {
+    return a - b;
+}
+
+func multiply(a int, b int) int {
+    return a * b;
+}
+
+func divide(a int, b int) int {
+    agar b == 0 {
+        paneer.bol("Error: Division by zero!");
+        return 0;
+    } varna {
+        return a / b;
+    }
+}
+
+func isEven(num int) bool {
+    ye remainder: int = num - (num / 2) * 2;
+    return remainder == 0;
+}
+
+// Main calculations
+ye x: int = 20;
+ye y: int = 4;
+
+ye addResult: int = add(x, y);
+ye subResult: int = subtract(x, y);
+ye mulResult: int = multiply(x, y);
+ye divResult: int = divide(x, y);
+
+paneer.bol("Numbers: " + x + " and " + y);
+paneer.bol("Addition: " + addResult);
+paneer.bol("Subtraction: " + subResult);
+paneer.bol("Multiplication: " + mulResult);
+paneer.bol("Division: " + divResult);
+
+// Test even/odd
+ye num: int = 42;
+ye even: bool = isEven(num);
+
+agar even {
+    paneer.bol(num + " is even");
+} varna {
+    paneer.bol(num + " is odd");
+}
+
+// Factorial function
+func factorial(n int) int {
+    agar n <= 1 {
+        return 1;
+    } varna {
+        return n * factorial(n - 1);
+    }
+}
+
+ye fact: int = factorial(5);
+paneer.bol("Factorial of 5: " + fact);
+
+paneer.bol("=== Calculator Demo Complete ===");

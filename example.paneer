@@ -1,0 +1,134 @@
+// PaneerLang Example - Comprehensive Feature Demo
+// This file demonstrates all features of the PaneerLang programming language
+
+// Print welcome message
+paneer.bol("Welcome to PaneerLang!");
+paneer.bol("======================");
+
+// Variable declarations with different types
+ye name: string = "Amit";
+ye age: int = 25;
+ye height: float = 5.8;
+ye isStudent: bool = true;
+
+// Print variables
+paneer.bol("Name: " + name);
+paneer.bol("Age: " + age);
+paneer.bol("Student: " + isStudent);
+
+// Arithmetic operations
+ye a: int = 10;
+ye b: int = 5;
+ye sum: int = a + b;
+ye difference: int = a - b;
+ye product: int = a * b;
+ye quotient: int = a / b;
+
+paneer.bol("Arithmetic Operations:");
+paneer.bol("10 + 5 = " + sum);
+paneer.bol("10 - 5 = " + difference);
+paneer.bol("10 * 5 = " + product);
+paneer.bol("10 / 5 = " + quotient);
+
+// Conditional statements
+ye score: int = 85;
+
+agar score >= 90 {
+    paneer.bol("Grade: A");
+} varna {
+    agar score >= 80 {
+        paneer.bol("Grade: B");
+    } varna {
+        agar score >= 70 {
+            paneer.bol("Grade: C");
+        } varna {
+            paneer.bol("Grade: F");
+        }
+    }
+}
+
+// Function definitions
+func add(x int, y int) int {
+    return x + y;
+}
+
+func multiply(x int, y int) int {
+    return x * y;
+}
+
+func greet(name string) string {
+    return "Hello, " + name + "!";
+}
+
+func isEven(num int) bool {
+    ye remainder: int = num - (num / 2) * 2;
+    return remainder == 0;
+}
+
+// Function calls
+ye result1: int = add(15, 25);
+ye result2: int = multiply(6, 7);
+ye greeting: string = greet("PaneerLang User");
+ye evenCheck: bool = isEven(42);
+
+paneer.bol("Function Results:");
+paneer.bol("add(15, 25) = " + result1);
+paneer.bol("multiply(6, 7) = " + result2);
+paneer.bol("greet('PaneerLang User') = " + greeting);
+paneer.bol("isEven(42) = " + evenCheck);
+
+// Boolean operations
+ye isAdult: bool = age >= 18;
+ye canVote: bool = isAdult;
+
+agar canVote {
+    paneer.bol("You can vote!");
+} varna {
+    paneer.bol("You cannot vote yet.");
+}
+
+// Nested function calls and complex expressions
+func factorial(n int) int {
+    agar n <= 1 {
+        return 1;
+    } varna {
+        return n * factorial(n - 1);
+    }
+}
+
+ye fact5: int = factorial(5);
+paneer.bol("Factorial of 5 = " + fact5);
+
+// String operations
+ye firstName: string = "Paneer";
+ye lastName: string = "Lang";
+ye fullName: string = firstName + " " + lastName;
+
+paneer.bol("Full Name: " + fullName);
+
+// Comparison operations
+ye x: int = 10;
+ye y: int = 20;
+
+agar x == y {
+    paneer.bol("x equals y");
+} varna {
+    agar x > y {
+        paneer.bol("x is greater than y");
+    } varna {
+        paneer.bol("x is less than y");
+    }
+}
+
+// Float operations
+ye pi: float = 3.14159;
+ye radius: float = 5.0;
+ye area: float = pi * radius * radius;
+
+paneer.bol("Circle area calculation:");
+paneer.bol("Area = π × r² = " + area);
+
+// Final message
+paneer.bol("======================");
+paneer.bol("PaneerLang Demo Complete!");
+paneer.bol("Thank you for trying PaneerLang!");

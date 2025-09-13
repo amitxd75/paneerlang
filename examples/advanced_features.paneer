@@ -1,0 +1,107 @@
+// PaneerLang Advanced Features Demo
+// Showcasing arrays, loops, and Hindi return syntax
+
+paneer.bol("=== PaneerLang Advanced Features ===");
+
+// Array declarations and operations
+ye numbers: array<int> = [1, 2, 3, 4, 5];
+ye names: array<string> = ["Amit", "Alex", "Steve"];
+ye flags: array<bool> = [true, false, true];
+
+paneer.bol("Arrays created successfully!");
+
+// Array access examples
+ye firstNumber: int = numbers[0];
+ye secondName: string = names[1];
+ye thirdFlag: bool = flags[2];
+
+paneer.bol("First number: " + firstNumber);
+paneer.bol("Second name: " + secondName);
+paneer.bol("Third flag: " + thirdFlag);
+
+// Simple function with Hindi return syntax
+func getFirstElement() int {
+    wapas kar 1;  // Hindi return syntax!
+}
+
+// Function with traditional return
+func calculateSum() int {
+    ye sum: int = 15;  // Hardcoded since we can't do loops with assignment
+    return sum;
+}
+
+// Function to demonstrate string operations
+func greetUser(name string) string {
+    return "Hello, " + name + "!";
+}
+
+// Test the functions
+ye firstNum: int = getFirstElement();
+paneer.bol("First number from function: " + firstNum);
+
+ye totalSum: int = calculateSum();
+paneer.bol("Sum of numbers: " + totalSum);
+
+ye greeting: string = greetUser("PaneerLang User");
+paneer.bol("Greeting: " + greeting);
+
+// Simple counting example (without assignment)
+ye counter: int = 0;
+paneer.bol("Counter value: " + counter);
+
+// For loop with arrays (read-only iteration)
+paneer.bol("Numbers using har...mein (for):");
+har num mein numbers {
+    paneer.bol("Number: " + num);
+}
+
+paneer.bol("Names using har...mein (for):");
+har name mein names {
+    paneer.bol("Name: " + name);
+}
+
+// Boolean operations
+ye isTrue: bool = true;
+ye isFalse: bool = false;
+
+agar isTrue {
+    paneer.bol("Boolean true works!");
+} varna {
+    paneer.bol("This shouldn't print");
+}
+
+agar isFalse {
+    paneer.bol("This shouldn't print");
+} varna {
+    paneer.bol("Boolean false works!");
+}
+
+// Nested function calls
+func addTwo(a int, b int) int {
+    return a + b;
+}
+
+func multiplyByTwo(x int) int {
+    return x * 2;
+}
+
+ye result1: int = addTwo(5, 3);
+ye result2: int = multiplyByTwo(result1);
+paneer.bol("5 + 3 = " + result1 + ", then * 2 = " + result2);
+
+// String concatenation
+ye firstName: string = "Paneer";
+ye lastName: string = "Lang";
+ye fullName: string = firstName + " " + lastName;
+paneer.bol("Full name: " + fullName);
+
+// More complex function with Hindi return
+func processName(first string, last string) string {
+    ye combined: string = first + " " + last;
+    wapas kar combined;
+}
+
+ye processedName: string = processName("Hindi", "Programming");
+paneer.bol("Processed name: " + processedName);
+
+paneer.bol("=== Advanced Features Demo Complete! ===");

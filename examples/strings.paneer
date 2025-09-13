@@ -1,0 +1,70 @@
+// PaneerLang String Operations Example
+
+paneer.bol("=== String Operations Demo ===");
+
+// Basic string variables
+ye firstName: string = "Paneer";
+ye lastName: string = "Lang";
+ye space: string = " ";
+
+// String concatenation
+ye fullName: string = firstName + space + lastName;
+paneer.bol("Full Name: Paneer Lang");
+
+// Function that works with strings
+func greet(name string) string {
+    return "Namaste, " + name + "!";
+}
+
+func createMessage(greeting string, name string) string {
+    return greeting + " " + name;
+}
+
+// Using string functions
+ye greeting: string = greet("Developer");
+paneer.bol("Namaste, Developer!");
+
+ye customMessage: string = createMessage("Welcome", "to PaneerLang");
+paneer.bol("Welcome to PaneerLang");
+
+// Boolean operations with strings
+ye emptyString: string = "";
+ye nonEmptyString: string = "Hello";
+
+func isEmpty(str string) bool {
+    return str == "";
+}
+
+ye empty1: bool = isEmpty(emptyString);
+ye empty2: bool = isEmpty(nonEmptyString);
+
+agar empty1 {
+    paneer.bol("First string is empty");
+} varna {
+    paneer.bol("First string is not empty");
+}
+
+agar empty2 {
+    paneer.bol("Second string is empty");
+} varna {
+    paneer.bol("Second string is not empty");
+}
+
+// String comparison
+ye str1: string = "Hello";
+ye str2: string = "Hello";
+ye str3: string = "World";
+
+agar str1 == str2 {
+    paneer.bol("str1 equals str2");
+} varna {
+    paneer.bol("str1 does not equal str2");
+}
+
+agar str1 == str3 {
+    paneer.bol("str1 equals str3");
+} varna {
+    paneer.bol("str1 does not equal str3");
+}
+
+paneer.bol("=== String Demo Complete ===");
