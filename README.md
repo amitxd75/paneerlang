@@ -6,7 +6,12 @@ A toy programming language with Hindi-inspired syntax, built in Rust.
 
 ## 🎬 Showcase
 
-> **📹 [Watch PaneerLang in Action](./assets/sample.mp4)**
+<!-- GitHub video embedding (drag & drop MP4 into GitHub issue/PR to get proper URL) -->
+<!-- For now, using clickable badge until video is properly uploaded -->
+
+[![PaneerLang Demo](https://img.shields.io/badge/▶️-Watch%20Demo%20Video-blue?style=for-the-badge&logo=play)](./assets/sample.mp4)
+
+> **📹 Click above to watch PaneerLang in action!** (MP4, 1.6MB)
 
 ## 🎯 What is this?
 
